@@ -1,5 +1,5 @@
 ![Logo](README/waffle-logo@2x.png)
-# 모든 리뷰는 소중하니까 :: Waffle.
+# 보고싶은 것은 많지만, 볼만한 것들은 적으니까. :: Waffle.
 [waffle.reviews](https://waffle.reviews)  
 와플은 다양한 컨텐츠들의 리뷰를 저장하고 추천하는 서비스입니다.  
 
