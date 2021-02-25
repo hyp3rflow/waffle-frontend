@@ -13,6 +13,8 @@ const ReviewEvaluationsWrapper = styled.div`
 `;
 
 const WebtoonPage: React.FC = () => {
+  const date = new Date();
+
   return (
     <>
       <Header />
@@ -20,7 +22,48 @@ const WebtoonPage: React.FC = () => {
       <PageTemplate>
         <ReviewEvaluationsWrapper>
           <WebtoonReviewList
-            reviews={[{ id: 123, content: '안녕', recommendRate: 3 }]}
+            reviews={[
+              {
+                id: 123,
+                content: '안녕',
+                recommendRate: 3,
+                drawingStyleRate: 3,
+                enjoyRate: 3,
+                authorId: 3,
+                authorNickname: 'hyperflow',
+                timestamp: date,
+              },
+              {
+                id: 1234,
+                content: '안녕',
+                recommendRate: 3,
+                drawingStyleRate: 3,
+                enjoyRate: 3,
+                authorId: 3,
+                authorNickname: 'hyperflow',
+                timestamp: date,
+              },
+              {
+                id: 1235,
+                content: '안녕',
+                recommendRate: 3,
+                drawingStyleRate: 3,
+                enjoyRate: 3,
+                authorId: 3,
+                authorNickname: 'hyperflow',
+                timestamp: date,
+              },
+              {
+                id: 1263,
+                content: '안녕',
+                recommendRate: 3,
+                drawingStyleRate: 3,
+                enjoyRate: 3,
+                authorId: 3,
+                authorNickname: 'hyperflow',
+                timestamp: date,
+              },
+            ]}
           />
           <WebtoonTotalEvaluations
             recommendRate={80}

@@ -34,11 +34,10 @@ interface HeaderItemProps {
 
 const HeaderItem = styled(Link)<HeaderItemProps>`
   padding: 5px 8px;
-  background-color: ${(props) =>
-    props.primary ? ColorPalette.BRAND_MAIN : ColorPalette.BRAND_ORANGE};
-  color: ${ColorPalette.WHITE} !important;
   font-size: 14px;
-  transition: background-color 0.3s linear;
+  font-weight: bold;
+  transition: background-color 0.2s linear;
+  border-radius: 4px;
   user-select: none;
 
   & + & {
@@ -46,7 +45,7 @@ const HeaderItem = styled(Link)<HeaderItemProps>`
   }
 
   &:hover {
-    background-color: ${ColorPalette.BRAND_BASE};
+    background-color: ${ColorPalette.BRAND_ACCENT};
   }
 `;
 
