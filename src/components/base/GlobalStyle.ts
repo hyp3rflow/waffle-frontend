@@ -35,6 +35,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   a, a:visited {
+    color: inherit;
     text-decoration: none;
   }
 

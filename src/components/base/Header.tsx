@@ -36,7 +36,7 @@ const HeaderItem = styled(Link)<HeaderItemProps>`
   padding: 5px 8px;
   background-color: ${(props) =>
     props.primary ? ColorPalette.BRAND_MAIN : ColorPalette.BRAND_ORANGE};
-  color: ${ColorPalette.WHITE};
+  color: ${ColorPalette.WHITE} !important;
   font-size: 14px;
   transition: background-color 0.3s linear;
   user-select: none;
