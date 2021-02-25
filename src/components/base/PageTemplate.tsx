@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const PageTemplateWrapper = styled.div`
   max-width: 1290px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding: 0 18px;
 `;
 
 const PageTemplate: React.FC = (props) => {
