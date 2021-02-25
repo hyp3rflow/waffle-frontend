@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const WebtoonTotalEvaluationsWrapper = styled.div`
-  width: 480px;
+  min-width: 340px;
   margin-left: 28px;
-  margin-bottom: 28px;
+  margin-bottom: auto;
   padding: 14px;
   background-color: ${ColorPalette.WHITE};
   box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);

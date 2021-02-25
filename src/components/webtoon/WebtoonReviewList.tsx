@@ -1,17 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { WebtoonReview } from 'models/Review';
-import PageTemplate from 'components/base/PageTemplate';
-import { ColorPalette } from 'utils/ColorUtils';
+import WebtoonReviewItem from './WebtoonReviewItem';
 
 const WebtoonReviewListContainer = styled.div`
   width: 100%;
-`;
-
-const ReviewWrapper = styled.div`
-  background-color: ${ColorPalette.WHITE};
-  padding: 14px;
-  box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
 `;
 
 const WebtoonReviewListTitle = styled.p`
@@ -40,7 +33,7 @@ const WebtoonReviewList: React.FC<WebtoonReviewListProps> = (props) => {
       </WebtoonReviewListTitle>
       <WebtoonReviewListWrapper>
         {reviews.map((review) => (
-          <ReviewWrapper key={review.id}>안녕!</ReviewWrapper>
+          <WebtoonReviewItem key={review.id} review={review} />
         ))}
       </WebtoonReviewListWrapper>
     </WebtoonReviewListContainer>
