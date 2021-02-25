@@ -4,4 +4,6 @@ export const ColorPalette = {
   BRAND_ORANGE: '#ff7c24',
   WHITE: '#ffffff',
   BLACK: '#222222',
+  DARK_GRAY: '#212529',
+  GRAY: '#495057',
 };

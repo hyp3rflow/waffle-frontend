@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { ColorPalette } from 'utils/ColorUtils';
 
-const WebtoonCurationItemWrapper = styled.div`
+const WebtoonCurationItemWrapper = styled(Link)`
   width: 200px;
   box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
 
@@ -38,7 +39,7 @@ const ItemAuthor = styled.span`
 
 const WebtoonCurationItem: React.FC = () => {
   return (
-    <WebtoonCurationItemWrapper>
+    <WebtoonCurationItemWrapper to="/webtoon/3">
       <ItemThumbnail src="https://shared-comic.pstatic.net/thumb/webtoon/748105/thumbnail/thumbnail_IMAG06_fa3bf10d-1b8f-40cd-a8eb-01caf9bbc3e4.jpg" />
       <ItemInfoWrapper>
         <ItemTitle>독립일기</ItemTitle>
