@@ -8,7 +8,8 @@ const WebtoonTotalEvaluationsWrapper = styled.div`
   margin-bottom: auto;
   padding: 14px;
   background-color: ${ColorPalette.WHITE};
-  box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
+  box-shadow: rgb(0 0 0 / 4%) 0px 1px 3px 0px,
+    rgb(0 0 0 / 8%) 0px 0px 0px 1px inset;
 `;
 
 const Title = styled.p`

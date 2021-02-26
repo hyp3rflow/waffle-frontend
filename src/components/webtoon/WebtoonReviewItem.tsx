@@ -5,8 +5,9 @@ import { WebtoonReview } from 'models/Review';
 
 const WebtoonReviewItemWrapper = styled.div`
   background-color: ${ColorPalette.WHITE};
+  box-shadow: rgb(0 0 0 / 4%) 0px 1px 3px 0px,
+    rgb(0 0 0 / 8%) 0px 0px 0px 1px inset;
   padding: 18px;
-  box-shadow: 0 8px 12px rgba(20, 20, 20, 0.15);
 
   & + & {
     margin-top: 18px;

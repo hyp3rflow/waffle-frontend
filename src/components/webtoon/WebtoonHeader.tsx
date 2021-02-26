@@ -19,9 +19,10 @@ const WebtoonThumbnail = styled.img`
 
 const WebtoonHeaderWrapper = styled.div`
   padding: 28px;
-  box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
   background-color: ${ColorPalette.WHITE};
   margin: 28px 0;
+  box-shadow: rgb(0 0 0 / 4%) 0px 1px 3px 0px,
+    rgb(0 0 0 / 8%) 0px 0px 0px 1px inset;
 `;
 
 const HorizontalWrapper = styled.div`
