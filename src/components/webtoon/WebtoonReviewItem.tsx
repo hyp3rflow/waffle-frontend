@@ -5,8 +5,8 @@ import { WebtoonReview } from 'models/Review';
 
 const WebtoonReviewItemWrapper = styled.div`
   background-color: ${ColorPalette.WHITE};
-  box-shadow: rgb(0 0 0 / 4%) 0px 1px 3px 0px,
-    rgb(0 0 0 / 8%) 0px 0px 0px 1px inset;
+  box-shadow: rgb(0, 0, 0, 4%) 0px 1px 3px 0px,
+    rgb(0, 0, 0, 8%) 0px 0px 0px 1px inset;
   padding: 18px;
 
   & + & {
@@ -42,6 +42,7 @@ const ReviewUserBadge = styled.span`
   color: ${ColorPalette.WHITE};
   font-size: 14px;
   box-shadow: 0 0 0 4px ${ColorPalette.BRAND_ORANGE};
+  padding: 0 2px;
 
   ${ReviewUser} + & {
     margin-left: 10px;

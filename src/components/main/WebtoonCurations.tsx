@@ -5,15 +5,15 @@ import { ColorPalette } from 'utils/ColorUtils';
 import WebtoonCurationItem from './WebtoonCurationItem';
 
 const WebtoonCurationsWrapper = styled.div`
-  padding: 28px 0;
+  padding: 32px 0;
 `;
 
 const Title = styled.div`
   text-align: center;
-  padding: 14px 0;
+  padding: 28px 0;
 
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: 800;
+  font-size: 28px;
 `;
 
 const TitleEmphasis = styled.span`

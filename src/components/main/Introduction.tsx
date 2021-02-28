@@ -7,7 +7,7 @@ import BackgroundTemplate from 'components/base/BackgroundTemplate';
 const IntroTitle = styled.p`
   display: inline-block;
   font-size: 38px;
-  font-weight: 700;
+  font-weight: 800;
 `;
 
 const IntroSubtitle = styled.p`
