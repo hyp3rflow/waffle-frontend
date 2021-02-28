@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
     <BackgroundTemplate backgroundColor="#343a40">
       <FooterWrapper>
         <Logo>waffle.reviews</Logo>
-        <Copyright>&copy; 2021 hyperflow</Copyright>
+        <Copyright>&copy; 2021 hyperflow, TEAM waffle</Copyright>
         <Address>
           서울특별시 성북구 안암동5가 고려대학교 과학도서관 309B호
         </Address>
