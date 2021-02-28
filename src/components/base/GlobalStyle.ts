@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #f8f9fa;
     min-height: 100%;
-    color: ${ColorPalette.BRAND_BLACK};
+    color: ${ColorPalette.BRAND_BLACK}
 
     margin: 0;
     padding: 0;
