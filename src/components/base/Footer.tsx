@@ -52,6 +52,10 @@ const Footer: React.FC = () => {
           <Logo>waffle.reviews</Logo>
           <Copyright>&copy; 2021 hyperflow, TEAM waffle</Copyright>
           <Address>
+            원작 콘텐츠의 저작권은 저자 또는 제공처에 있으며, 비평 목적의
+            공정이용 해당 범위 내에서 인용하고 있습니다.
+          </Address>
+          <Address>
             서울특별시 성북구 안암동5가 고려대학교 과학도서관 309B호
           </Address>
           <Octocat
