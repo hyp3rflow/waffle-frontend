@@ -58,6 +58,11 @@ const Header: React.FC = () => {
             <LogoImg src={Logo} alt="logo" />
           </LogoLink>
           <HeaderItem to="/about">와플?</HeaderItem>
+          <HeaderItem to="/webtoon">웹툰</HeaderItem>
+          <HeaderItem to="/comics">만화</HeaderItem>
+          <HeaderItem to="/webnovel">웹소설</HeaderItem>
+          <HeaderItem to="/drama">드라마</HeaderItem>
+          <HeaderItem to="/movie">영화</HeaderItem>
           <HeaderSectionWrapper>
             <HeaderItem to="/login">로그인</HeaderItem>
             <HeaderItem primary to="/register">
