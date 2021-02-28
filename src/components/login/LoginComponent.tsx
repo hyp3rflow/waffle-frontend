@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const LoginWrapper = styled.div`
-  height: calc(100vh - 260px);
+  min-height: calc(100vh - 260px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,6 +14,7 @@ const LoginWrapper = styled.div`
 
 const LoginBox = styled.div`
   width: 480px;
+  margin: 48px;
   padding: 48px;
   background-color: ${ColorPalette.WHITE};
   box-shadow: rgb(20 20 20 / 2%) 2px 8px 12px 0px,

@@ -12,6 +12,7 @@ const RegisterWrapper = styled.div`
 
 const RegisterBox = styled.div`
   width: 480px;
+  margin: 48px;
   padding: 48px;
   background-color: ${ColorPalette.WHITE};
   box-shadow: rgb(20 20 20 / 2%) 2px 8px 12px 0px,
