@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #f8f9fa;
     min-height: 100%;
-    color: ${ColorPalette.BLACK};
+    color: ${ColorPalette.BRAND_BLACK};
 
     margin: 0;
     padding: 0;
@@ -24,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
     scrollbar-width: none;
   }
 
-  textarea, button, button:active {
+  textarea, button, button:active, input {
     resize: none;
     outline: none;
     border: none;
