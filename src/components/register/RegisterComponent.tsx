@@ -25,6 +25,12 @@ const RegisterTitle = styled.h1`
   margin-bottom: 36px;
 `;
 
+const DescriptionLabel = styled.p`
+  padding: 8px 0;
+  font-size: 14px;
+  text-align: center;
+`;
+
 interface RegisterInputProps {
   isInvalid?: boolean;
 }
@@ -55,6 +61,9 @@ const RegisterComponent: React.FC = () => {
         <RegisterBox>
           <RegisterTitle>회원가입</RegisterTitle>
           <RegisterInput placeholder="이메일 (아이디)" />
+          <DescriptionLabel>
+            아이디로 사용되며, 이메일 인증이 필요합니다.
+          </DescriptionLabel>
           <RegisterInput
             placeholder="비밀번호"
             type="password"
@@ -65,7 +74,13 @@ const RegisterComponent: React.FC = () => {
             type="password"
             autoComplete="off"
           />
+          <DescriptionLabel>
+            7글자 이상 영문, 특수문자, 숫자 조합으로 구성해주세요.
+            <br />
+            비밀번호가 일치하지 않습니다.
+          </DescriptionLabel>
           <RegisterInput placeholder="닉네임" />
+          <DescriptionLabel>사용할 수 없는 닉네임입니다.</DescriptionLabel>
         </RegisterBox>
       </RegisterWrapper>
     </PageTemplate>
