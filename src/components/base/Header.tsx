@@ -62,45 +62,29 @@ const Header: React.FC = () => {
             </LogoLink>
           </Link>
           <Link href="/about">
-            <HeaderItem>
-              <a>와플?</a>
-            </HeaderItem>
+            <HeaderItem>와플?</HeaderItem>
           </Link>
           <Link href="/webtoon">
-            <HeaderItem>
-              <a>웹툰</a>
-            </HeaderItem>
+            <HeaderItem>웹툰</HeaderItem>
           </Link>
           <Link href="/comics">
-            <HeaderItem>
-              <a>만화</a>
-            </HeaderItem>
+            <HeaderItem>만화</HeaderItem>
           </Link>
           <Link href="/webnovel">
-            <HeaderItem>
-              <a>웹소설</a>
-            </HeaderItem>
+            <HeaderItem>웹소설</HeaderItem>
           </Link>
           <Link href="/drama">
-            <HeaderItem>
-              <a>드라마</a>
-            </HeaderItem>
+            <HeaderItem>드라마</HeaderItem>
           </Link>
           <Link href="/movie">
-            <HeaderItem>
-              <a>영화</a>
-            </HeaderItem>
+            <HeaderItem>영화</HeaderItem>
           </Link>
           <HeaderSectionWrapper>
             <Link href="/login">
-              <HeaderItem>
-                <a>로그인</a>
-              </HeaderItem>
+              <HeaderItem>로그인</HeaderItem>
             </Link>
             <Link href="/register">
-              <HeaderItem primary>
-                <a>회원가입</a>
-              </HeaderItem>
+              <HeaderItem primary>회원가입</HeaderItem>
             </Link>
           </HeaderSectionWrapper>
         </HeaderWrapper>
