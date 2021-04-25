@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 import { WebtoonReview } from 'models/Review';
 
@@ -88,7 +89,7 @@ interface WebtoonReviewItemProps {
   review: WebtoonReview;
 }
 
-const WebtoonReviewItem: React.FC<WebtoonReviewItemProps> = (props) => {
+const WebtoonReviewItem: React.FC<WebtoonReviewItemProps> = props => {
   const { review } = props;
   const {
     id,

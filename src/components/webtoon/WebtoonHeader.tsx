@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import PageTemplate from 'components/base/PageTemplate';
 import { ColorPalette } from 'utils/ColorUtils';
+
 import WebtoonGenreList from './WebtoonGenreList';
 
 const WebtoonHeaderTitle = styled.p`

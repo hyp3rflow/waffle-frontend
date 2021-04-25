@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 
 const GenreListWrapper = styled.div`
@@ -23,12 +24,12 @@ interface WebtoonGenreListProps {
   genreList: string[];
 }
 
-const WebtoonGenreList: React.FC<WebtoonGenreListProps> = (props) => {
+const WebtoonGenreList: React.FC<WebtoonGenreListProps> = props => {
   const { genreList } = props;
 
   return (
     <GenreListWrapper>
-      {genreList.map((genre) => (
+      {genreList.map(genre => (
         <GenreItem key={genre}>{genre}</GenreItem>
       ))}
     </GenreListWrapper>

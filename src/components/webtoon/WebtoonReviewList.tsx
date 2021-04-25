@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { WebtoonReview } from 'models/Review';
+
 import WebtoonReviewItem from './WebtoonReviewItem';
 
 const WebtoonReviewListContainer = styled.div`
@@ -23,7 +25,7 @@ interface WebtoonReviewListProps {
   reviews: WebtoonReview[];
 }
 
-const WebtoonReviewList: React.FC<WebtoonReviewListProps> = (props) => {
+const WebtoonReviewList: React.FC<WebtoonReviewListProps> = props => {
   const { reviews } = props;
 
   return (
@@ -32,7 +34,7 @@ const WebtoonReviewList: React.FC<WebtoonReviewListProps> = (props) => {
         {reviews.length}개의 웹툰 리뷰가 있어요!
       </WebtoonReviewListTitle>
       <WebtoonReviewListWrapper>
-        {reviews.map((review) => (
+        {reviews.map(review => (
           <WebtoonReviewItem key={review.id} review={review} />
         ))}
       </WebtoonReviewListWrapper>

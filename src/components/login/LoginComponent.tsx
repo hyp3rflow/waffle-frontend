@@ -1,8 +1,9 @@
-import PageTemplate from 'components/base/PageTemplate';
-import RoundButton from 'components/base/RoundButton';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import styled from 'styled-components';
+
+import RoundButton from 'components/base/RoundButton';
+import PageTemplate from 'components/base/PageTemplate';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const LoginWrapper = styled.div`
@@ -114,8 +115,12 @@ const LoginComponent: React.FC = () => {
             </RoundButton>
           </LoginButtonList>
           <AuthAltList>
-            <Link to="/find/account">아이디를 잊었어요.</Link>
-            <Link to="/find/password">비밀번호를 모르겠어요 :(</Link>
+            <Link href="/find/account">
+              <a>아이디를 잊었어요.</a>
+            </Link>
+            <Link href="/find/password">
+              <a>비밀번호를 모르겠어요 :(</a>
+            </Link>
           </AuthAltList>
         </LoginBox>
       </LoginWrapper>

@@ -7,7 +7,7 @@ const PageTemplateWrapper = styled.div`
   padding: 0 30px;
 `;
 
-const PageTemplate: React.FC = (props) => {
+const PageTemplate: React.FC = props => {
   const { children } = props;
 
   return <PageTemplateWrapper>{children}</PageTemplateWrapper>;

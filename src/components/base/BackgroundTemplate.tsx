@@ -6,14 +6,14 @@ interface BackgroundWrapperProps {
 }
 
 const BackgroundWrapper = styled.div<BackgroundWrapperProps>`
-  background-color: ${(props) => props.backgroundColor};
+  background-color: ${props => props.backgroundColor};
 `;
 
 interface BackgroundTemplateProps {
   backgroundColor: string;
 }
 
-const BackgroundTemplate: React.FC<BackgroundTemplateProps> = (props) => {
+const BackgroundTemplate: React.FC<BackgroundTemplateProps> = props => {
   const { children, backgroundColor } = props;
 
   return (

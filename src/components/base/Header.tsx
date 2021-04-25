@@ -1,8 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import styled from 'styled-components';
+
 import Logo from 'assets/waffle-logo@2x.png';
 import { ColorPalette } from 'utils/ColorUtils';
+
 import PageTemplate from './PageTemplate';
 import BackgroundTemplate from './BackgroundTemplate';
 
@@ -19,7 +21,7 @@ const HeaderSectionWrapper = styled.div`
   margin-left: auto;
 `;
 
-const LogoLink = styled(Link)`
+const LogoLink = styled.a`
   height: 50px;
   margin-right: 12px;
 `;
@@ -32,7 +34,7 @@ interface HeaderItemProps {
   primary?: boolean;
 }
 
-const HeaderItem = styled(Link)<HeaderItemProps>`
+const HeaderItem = styled.a<HeaderItemProps>`
   padding: 5px 8px;
   font-size: 14px;
   font-weight: bold;
@@ -54,20 +56,52 @@ const Header: React.FC = () => {
     <BackgroundTemplate backgroundColor={ColorPalette.WHITE}>
       <PageTemplate>
         <HeaderWrapper>
-          <LogoLink to="/">
-            <LogoImg src={Logo} alt="logo" />
-          </LogoLink>
-          <HeaderItem to="/about">와플?</HeaderItem>
-          <HeaderItem to="/webtoon">웹툰</HeaderItem>
-          <HeaderItem to="/comics">만화</HeaderItem>
-          <HeaderItem to="/webnovel">웹소설</HeaderItem>
-          <HeaderItem to="/drama">드라마</HeaderItem>
-          <HeaderItem to="/movie">영화</HeaderItem>
-          <HeaderSectionWrapper>
-            <HeaderItem to="/login">로그인</HeaderItem>
-            <HeaderItem primary to="/register">
-              회원가입
+          <Link href="/">
+            <LogoLink>
+              <LogoImg src={Logo} alt="logo" />
+            </LogoLink>
+          </Link>
+          <Link href="/about">
+            <HeaderItem>
+              <a>와플?</a>
             </HeaderItem>
+          </Link>
+          <Link href="/webtoon">
+            <HeaderItem>
+              <a>웹툰</a>
+            </HeaderItem>
+          </Link>
+          <Link href="/comics">
+            <HeaderItem>
+              <a>만화</a>
+            </HeaderItem>
+          </Link>
+          <Link href="/webnovel">
+            <HeaderItem>
+              <a>웹소설</a>
+            </HeaderItem>
+          </Link>
+          <Link href="/drama">
+            <HeaderItem>
+              <a>드라마</a>
+            </HeaderItem>
+          </Link>
+          <Link href="/movie">
+            <HeaderItem>
+              <a>영화</a>
+            </HeaderItem>
+          </Link>
+          <HeaderSectionWrapper>
+            <Link href="/login">
+              <HeaderItem>
+                <a>로그인</a>
+              </HeaderItem>
+            </Link>
+            <Link href="/register">
+              <HeaderItem primary>
+                <a>회원가입</a>
+              </HeaderItem>
+            </Link>
           </HeaderSectionWrapper>
         </HeaderWrapper>
       </PageTemplate>

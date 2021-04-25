@@ -1,6 +1,7 @@
-import PageTemplate from 'components/base/PageTemplate';
 import React from 'react';
 import styled from 'styled-components';
+
+import PageTemplate from 'components/base/PageTemplate';
 
 const AboutTopWrapper = styled.div`
   margin: 32px 0;
@@ -53,7 +54,8 @@ const AboutTop: React.FC = () => {
         <ParagraphWrapper>
           <Heading>의미있는 리뷰를 찾을 수 있도록.</Heading>
           <Description>
-            와플이 직접 인증한 '우수 리뷰어' 뱃지가 달린 리뷰를 찾아보세요.
+            와플이 직접 인증한 &apos;우수 리뷰어&apos; 뱃지가 달린 리뷰를
+            찾아보세요.
             <br />
             진정으로 컨텐츠를 사랑하는 리뷰어들의 의미있는 리뷰를 만날 수
             있습니다.

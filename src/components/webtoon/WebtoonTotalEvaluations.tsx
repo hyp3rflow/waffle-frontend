@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 
 const WebtoonTotalEvaluationsWrapper = styled.div`
@@ -67,9 +68,7 @@ interface WebtoonTotalEvaluationsProps {
   enjoyRate: number;
 }
 
-const WebtoonTotalEvaluations: React.FC<WebtoonTotalEvaluationsProps> = (
-  props
-) => {
+const WebtoonTotalEvaluations: React.FC<WebtoonTotalEvaluationsProps> = props => {
   const { recommendRate, drawingStyleRate, enjoyRate } = props;
 
   return (

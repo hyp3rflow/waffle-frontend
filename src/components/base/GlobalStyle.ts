@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 
 const GlobalStyle = createGlobalStyle`
@@ -14,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
 
     margin: 0;
     padding: 0;
-    font-family: "Inter", "Noto Sans KR", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    font-family: "Inter", 'Spoqa Han Sans Neo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
       'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
       sans-serif;
 

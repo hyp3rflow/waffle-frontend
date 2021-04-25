@@ -1,11 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
+
 import Header from 'components/base/Header';
 import Footer from 'components/base/Footer';
 import WebtoonHeader from 'components/webtoon/WebtoonHeader';
 import WebtoonReviewList from 'components/webtoon/WebtoonReviewList';
 import PageTemplate from 'components/base/PageTemplate';
 import WebtoonTotalEvaluations from 'components/webtoon/WebtoonTotalEvaluations';
-import styled from 'styled-components';
 
 const ReviewEvaluationsWrapper = styled.div`
   display: flex;

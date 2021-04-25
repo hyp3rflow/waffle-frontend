@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 
 interface StyleOption {
@@ -28,38 +29,38 @@ const RoundButtonWrapper = styled.button<StyleOption>`
     background-color: ${ColorPalette.BRAND_MAIN};
   }
 
-  ${(props) =>
+  ${props =>
     props.padding &&
     css`
       padding: ${props.padding};
     `}
 
-  ${(props) =>
+  ${props =>
     props.margin &&
     css`
       margin: ${props.margin};
     `}
 
-  ${(props) =>
+  ${props =>
     props.backgroundColor &&
     css`
       background-color: ${props.backgroundColor};
     `}
 
-  ${(props) =>
+  ${props =>
     props.borderRadius &&
     css`
       border-radius: ${props.borderRadius};
     `}
 
-  ${(props) =>
+  ${props =>
     props.transition &&
     css`
       transition: ${props.transition};
     `}
 
   &:active {
-    ${(props) =>
+    ${props =>
       props.onActiveBackgroundColor &&
       css`
         background-color: ${props.onActiveBackgroundColor};
@@ -67,7 +68,7 @@ const RoundButtonWrapper = styled.button<StyleOption>`
   }
 
   &:hover {
-    ${(props) =>
+    ${props =>
       props.onHoverBackgroundColor &&
       css`
         background-color: ${props.onHoverBackgroundColor};
@@ -76,11 +77,11 @@ const RoundButtonWrapper = styled.button<StyleOption>`
 `;
 
 interface RoundButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
   styleOptions?: StyleOption;
 }
 
-const RoundButton: React.FC<RoundButtonProps> = (props) => {
+const RoundButton: React.FC<RoundButtonProps> = props => {
   const { children, styleOptions, onClick } = props;
   return (
     <RoundButtonWrapper onClick={onClick} {...styleOptions}>

@@ -1,6 +1,7 @@
-import PageTemplate from 'components/base/PageTemplate';
 import React from 'react';
 import styled, { css } from 'styled-components';
+
+import PageTemplate from 'components/base/PageTemplate';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const RegisterWrapper = styled.div`
@@ -42,7 +43,7 @@ const RegisterInput = styled.input<RegisterInputProps>`
   box-shadow: rgb(0 0 0 / 4%) 0px 1px 3px 0px,
     rgb(0 0 0 / 8%) 0px 0px 0px 1px inset;
 
-  ${(props) =>
+  ${props =>
     props.isInvalid &&
     css`
       box-shadow: rgb(255 0 0 / 4%) 0px 1px 3px 0px,

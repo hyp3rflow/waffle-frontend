@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 import styled from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
 
-const WebtoonCurationItemWrapper = styled(Link)`
+const WebtoonCurationItemWrapper = styled.a`
   width: 200px;
   box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
 
@@ -39,17 +40,19 @@ const ItemAuthor = styled.span`
 
 const WebtoonCurationItem: React.FC = () => {
   return (
-    <WebtoonCurationItemWrapper to="/webtoon/3">
-      <ItemThumbnail src="https://shared-comic.pstatic.net/thumb/webtoon/748105/thumbnail/thumbnail_IMAG06_fa3bf10d-1b8f-40cd-a8eb-01caf9bbc3e4.jpg" />
-      <ItemInfoWrapper>
-        <ItemTitle>독립일기</ItemTitle>
-        <ItemAuthorName>
-          자까
-          <ItemAuthor> 작가</ItemAuthor>
-        </ItemAuthorName>
-        <div>네이버 웹툰 (목, 일요일)</div>
-      </ItemInfoWrapper>
-    </WebtoonCurationItemWrapper>
+    <Link href="/webtoon/3">
+      <WebtoonCurationItemWrapper>
+        <ItemThumbnail src="https://shared-comic.pstatic.net/thumb/webtoon/748105/thumbnail/thumbnail_IMAG06_fa3bf10d-1b8f-40cd-a8eb-01caf9bbc3e4.jpg" />
+        <ItemInfoWrapper>
+          <ItemTitle>독립일기</ItemTitle>
+          <ItemAuthorName>
+            자까
+            <ItemAuthor> 작가</ItemAuthor>
+          </ItemAuthorName>
+          <div>네이버 웹툰 (목, 일요일)</div>
+        </ItemInfoWrapper>
+      </WebtoonCurationItemWrapper>
+    </Link>
   );
 };
 

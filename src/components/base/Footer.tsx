@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import { ColorPalette } from 'utils/ColorUtils';
+
 import BackgroundTemplate from './BackgroundTemplate';
 import PageTemplate from './PageTemplate';
 
