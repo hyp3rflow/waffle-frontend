@@ -42,7 +42,7 @@ const HeaderItem = styled.a<HeaderItemProps>`
   border-radius: 4px;
   user-select: none;
 
-  & + & {
+  &:not(:first-of-type) {
     margin-left: 12px;
   }
 
