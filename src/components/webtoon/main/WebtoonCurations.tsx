@@ -28,7 +28,9 @@ const WebtoonCurationsList = styled.div`
   padding: 14px;
   padding-bottom: 18px;
 
-  overflow-x: hidden;
+  gap: 1rem;
+
+  overflow-x: scroll;
 `;
 
 const WebtoonCurations: React.FC = () => {

@@ -10,8 +10,7 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding: 2rem 0;
   margin: 0 auto;
   justify-content: center;
 `;

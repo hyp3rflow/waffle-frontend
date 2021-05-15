@@ -1,18 +1,17 @@
 import React from 'react';
 
-import Footer from 'components/base/Footer';
+import WebtoonMain from 'components/webtoon/main/WebtoonMain';
+import WebtoonWeekTable from 'components/webtoon/WebtoonWeekTable';
 import Header from 'components/base/Header';
-import WebtoonMain from 'components/main/webtoon/WebtoonMain';
-import WebtoonWeekTable from 'components/main/webtoon/WebtoonWeekTable';
+import PageLayout from 'components/base/PageLayout';
 
 const WebtoonMainPage: React.FC = () => {
   return (
-    <>
+    <PageLayout>
       <Header />
       <WebtoonMain />
       <WebtoonWeekTable />
-      <Footer />
-    </>
+    </PageLayout>
   );
 };
 

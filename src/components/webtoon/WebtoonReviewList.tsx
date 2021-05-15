@@ -17,7 +17,6 @@ const WebtoonReviewListTitle = styled.p`
 const WebtoonReviewListWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 14px;
   margin-bottom: 28px;
 `;
 
@@ -30,9 +29,6 @@ const WebtoonReviewList: React.FC<WebtoonReviewListProps> = props => {
 
   return (
     <WebtoonReviewListContainer>
-      <WebtoonReviewListTitle>
-        {reviews.length}개의 웹툰 리뷰가 있어요!
-      </WebtoonReviewListTitle>
       <WebtoonReviewListWrapper>
         {reviews.map(review => (
           <WebtoonReviewItem key={review.id} review={review} />

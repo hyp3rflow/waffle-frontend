@@ -36,22 +36,23 @@ const ReviewUserWrapper = styled.div`
 
 const ReviewUser = styled.div`
   font-weight: bold;
-`;
+  position: relative;
 
-const ReviewUserBadge = styled.span`
-  background-color: ${ColorPalette.BRAND_ORANGE};
-  color: ${ColorPalette.WHITE};
-  font-size: 14px;
-  box-shadow: 0 0 0 4px ${ColorPalette.BRAND_ORANGE};
-  padding: 0 2px;
-
-  ${ReviewUser} + & {
-    margin-left: 10px;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: ${ColorPalette.BRAND_BASE};
+    top: 0px;
+    right: -6px;
   }
 `;
 
 const ReviewTimestamp = styled.div`
   color: ${ColorPalette.GRAY};
+  font-size: 0.815rem;
   margin-left: auto;
 `;
 
@@ -109,7 +110,6 @@ const WebtoonReviewItem: React.FC<WebtoonReviewItemProps> = props => {
           <HorizontalWrapper>
             <ReviewUserWrapper>
               <ReviewUser>{authorNickname}</ReviewUser>
-              <ReviewUserBadge>우수 리뷰어</ReviewUserBadge>
             </ReviewUserWrapper>
             <ReviewTimestamp>{timestamp.toLocaleDateString()}</ReviewTimestamp>
           </HorizontalWrapper>

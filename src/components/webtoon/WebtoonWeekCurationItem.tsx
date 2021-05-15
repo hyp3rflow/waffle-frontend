@@ -3,26 +3,25 @@ import Link from 'next/link';
 import styled, { css } from 'styled-components';
 
 import { ColorPalette } from 'utils/ColorUtils';
-import NaverWebtoonIcon from 'components/webtoon/NaverWebtoonIcon';
+import NaverWebtoonIcon from 'components/webtoon/main/NaverWebtoonIcon';
+import { BREAKPOINT_MEDIUM } from 'constants/breakpoints';
 
 const WebtoonCurationItemWrapper = styled.a`
-  width: 200px;
-  box-shadow: 0 8px 12px rgba(20, 20, 20, 0.2);
-
-  & + & {
-    margin-left: 14px;
-  }
+  display: flex;
+  flex-grow: 1;
+  background-color: ${ColorPalette.WHITE};
 `;
 
 const ItemThumbnail = styled.img`
   object-fit: cover;
   background: ${ColorPalette.WHITE};
-  width: 200px;
-  height: 160px;
+  width: auto;
+  height: 100%;
 `;
 
 const ItemInfoWrapper = styled.div`
   margin: 14px;
+  margin-top: 0;
 
   display: inline-flex;
   flex-direction: column;
@@ -55,7 +54,6 @@ const WebtoonCurationItem: React.FC = () => {
             자까
             <ItemAuthor> 작가</ItemAuthor>
           </ItemAuthorName>
-          <div>매주 목, 일요일</div>
         </ItemInfoWrapper>
       </WebtoonCurationItemWrapper>
     </Link>
