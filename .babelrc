@@ -7,6 +7,6 @@
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
-    ["styled-components", { "ssr": true }]
+    ["babel-plugin-styled-components", { "ssr": true }]
   ]
 }

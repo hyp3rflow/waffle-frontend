@@ -48,6 +48,7 @@
     "axios": "^0.21.1",
     "next": "^9.5.3-canary.21",
     "next-optimized-images": "^2.6.2",
+    "open-color": "^1.8.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-query": "^3.12.0",
