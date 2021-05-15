@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import PageTemplate from 'components/base/PageTemplate';
+import PageTemplate from 'components/base/BlockLayout';
 import { ColorPalette } from 'utils/ColorUtils';
 
 import WebtoonCurationItem from './WebtoonCurationItem';
@@ -15,7 +15,7 @@ const Title = styled.div`
   padding: 28px 0;
 
   font-weight: 800;
-  font-size: 28px;
+  font-size: 1.5rem;
 `;
 
 const TitleEmphasis = styled.span`

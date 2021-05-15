@@ -1,11 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import Logo from 'assets/waffle-logo@2x.png';
 import { ColorPalette } from 'utils/ColorUtils';
+import { BREAKPOINT_MEDIUM } from 'constants/breakpoints';
 
-import PageTemplate from './PageTemplate';
+import PageTemplate from './BlockLayout';
 import BackgroundTemplate from './BackgroundTemplate';
 
 const HeaderWrapper = styled.div`
@@ -38,7 +39,7 @@ const HeaderItem = styled.a<HeaderItemProps>`
   padding: 5px 8px;
   font-size: 14px;
   font-weight: bold;
-  transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear;
   border-radius: 4px;
   user-select: none;
 
@@ -47,7 +48,8 @@ const HeaderItem = styled.a<HeaderItemProps>`
   }
 
   &:hover {
-    background-color: ${ColorPalette.BRAND_ACCENT};
+    background-color: ${ColorPalette.BRAND_BASE};
+    color: ${ColorPalette.WHITE};
   }
 `;
 
@@ -61,32 +63,44 @@ const Header: React.FC = () => {
               <LogoImg src={Logo} alt="logo" />
             </LogoLink>
           </Link>
-          <Link href="/about">
-            <HeaderItem>와플?</HeaderItem>
-          </Link>
-          <Link href="/webtoon">
-            <HeaderItem>웹툰</HeaderItem>
-          </Link>
-          <Link href="/comics">
-            <HeaderItem>만화</HeaderItem>
-          </Link>
-          <Link href="/webnovel">
-            <HeaderItem>웹소설</HeaderItem>
-          </Link>
-          <Link href="/drama">
-            <HeaderItem>드라마</HeaderItem>
-          </Link>
-          <Link href="/movie">
-            <HeaderItem>영화</HeaderItem>
-          </Link>
-          <HeaderSectionWrapper>
-            <Link href="/login">
-              <HeaderItem>로그인</HeaderItem>
+          <div
+            css={css`
+              display: flex;
+              width: 100%;
+              flex-wrap: wrap;
+              color: ${ColorPalette.DARK_GRAY};
+              @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+                display: none;
+              }
+            `}
+          >
+            <Link href="/about">
+              <HeaderItem>와플?</HeaderItem>
             </Link>
-            <Link href="/register">
-              <HeaderItem primary>회원가입</HeaderItem>
+            <Link href="/webtoon">
+              <HeaderItem>웹툰</HeaderItem>
             </Link>
-          </HeaderSectionWrapper>
+            <Link href="/comics">
+              <HeaderItem>만화</HeaderItem>
+            </Link>
+            <Link href="/webnovel">
+              <HeaderItem>웹소설</HeaderItem>
+            </Link>
+            <Link href="/drama">
+              <HeaderItem>드라마</HeaderItem>
+            </Link>
+            <Link href="/movie">
+              <HeaderItem>영화</HeaderItem>
+            </Link>
+            <HeaderSectionWrapper>
+              <Link href="/login">
+                <HeaderItem>로그인</HeaderItem>
+              </Link>
+              <Link href="/register">
+                <HeaderItem primary>회원가입</HeaderItem>
+              </Link>
+            </HeaderSectionWrapper>
+          </div>
         </HeaderWrapper>
       </PageTemplate>
     </BackgroundTemplate>

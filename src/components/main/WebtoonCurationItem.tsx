@@ -1,8 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ColorPalette } from 'utils/ColorUtils';
+import NaverWebtoonIcon from 'components/webtoon/NaverWebtoonIcon';
 
 const WebtoonCurationItemWrapper = styled.a`
   width: 200px;
@@ -30,6 +31,8 @@ const ItemInfoWrapper = styled.div`
 const ItemTitle = styled.div`
   font-weight: 600;
   font-size: 18px;
+  display: flex;
+  align-items: center;
 `;
 
 const ItemAuthorName = styled.div``;
@@ -44,12 +47,15 @@ const WebtoonCurationItem: React.FC = () => {
       <WebtoonCurationItemWrapper>
         <ItemThumbnail src="https://shared-comic.pstatic.net/thumb/webtoon/748105/thumbnail/thumbnail_IMAG06_fa3bf10d-1b8f-40cd-a8eb-01caf9bbc3e4.jpg" />
         <ItemInfoWrapper>
-          <ItemTitle>독립일기</ItemTitle>
+          <ItemTitle>
+            독립일기
+            <NaverWebtoonIcon width={40} height={25} />
+          </ItemTitle>
           <ItemAuthorName>
             자까
             <ItemAuthor> 작가</ItemAuthor>
           </ItemAuthorName>
-          <div>네이버 웹툰 (목, 일요일)</div>
+          <div>매주 목, 일요일</div>
         </ItemInfoWrapper>
       </WebtoonCurationItemWrapper>
     </Link>

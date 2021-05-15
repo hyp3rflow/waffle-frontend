@@ -5,7 +5,7 @@ import Header from 'components/base/Header';
 import Footer from 'components/base/Footer';
 import WebtoonHeader from 'components/webtoon/WebtoonHeader';
 import WebtoonReviewList from 'components/webtoon/WebtoonReviewList';
-import PageTemplate from 'components/base/PageTemplate';
+import PageTemplate from 'components/base/BlockLayout';
 import WebtoonTotalEvaluations from 'components/webtoon/WebtoonTotalEvaluations';
 
 const ReviewEvaluationsWrapper = styled.div`

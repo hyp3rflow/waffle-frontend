@@ -1,17 +1,24 @@
 import { createGlobalStyle } from 'styled-components';
 
+import { BREAKPOINT_MEDIUM, BREAKPOINT_SMALL } from 'constants/breakpoints';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const GlobalStyle = createGlobalStyle`
   html {
     font-size: 16px;
     height: 100%;
+
+    @media screen and (max-width: ${BREAKPOINT_MEDIUM}) {
+      font-size: 14px;
+    }
   }
 
   body {
     background: #f8f9fa;
     min-height: 100%;
     color: ${ColorPalette.BRAND_BLACK};
+    line-height: 1.3;
+    word-break: keep-all;
 
     margin: 0;
     padding: 0;
@@ -38,6 +45,7 @@ const GlobalStyle = createGlobalStyle`
   a, a:visited {
     color: inherit;
     text-decoration: none;
+    cursor: pointer;
   }
 
   input, textarea {

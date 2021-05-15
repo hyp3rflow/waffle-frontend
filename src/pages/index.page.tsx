@@ -1,18 +1,17 @@
 import React from 'react';
 
-import Footer from 'components/base/Footer';
 import Header from 'components/base/Header';
 import Introduction from 'components/main/Introduction';
 import WebtoonCurations from 'components/main/WebtoonCurations';
+import PageLayout from 'components/base/PageLayout';
 
 const MainPage: React.FC = () => {
   return (
-    <>
+    <PageLayout>
       <Header />
       <Introduction />
       <WebtoonCurations />
-      <Footer />
-    </>
+    </PageLayout>
   );
 };
 

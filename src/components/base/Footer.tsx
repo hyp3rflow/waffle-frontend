@@ -1,34 +1,34 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import { ColorPalette } from 'utils/ColorUtils';
 
 import BackgroundTemplate from './BackgroundTemplate';
-import PageTemplate from './PageTemplate';
+import PageTemplate from './BlockLayout';
 
 const FooterWrapper = styled.div`
   display: flex;
   flex-direction: column;
 
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   margin: 0 auto;
-  height: 200px;
   justify-content: center;
-
-  * {
-    color: ${ColorPalette.WHITE};
-  }
 `;
 
-const Logo = styled.h1`
-  font-weight: 700;
-  font-size: 1.5rem;
+const Logo = styled.p`
+  font-weight: bold;
+  color: #ced4da;
 `;
 
-const Copyright = styled.div`
-  font-weight: 700;
+const Copyright = styled.p`
+  font-size: 0.8125rem;
+  font-weight: bold;
+  color: #ced4da;
 `;
 
-const Address = styled.div`
+const Description = styled.p`
+  margin-top: 1rem;
   color: #ced4da;
 `;
 
@@ -48,18 +48,20 @@ const Octocat = styled.a`
 
 const Footer: React.FC = () => {
   return (
-    <BackgroundTemplate backgroundColor="#343a40">
+    <BackgroundTemplate
+      css={css`
+        padding-bottom: env(safe-area-inset-bottom);
+      `}
+      backgroundColor="#343a40"
+    >
       <PageTemplate>
         <FooterWrapper>
           <Logo>waffle.reviews</Logo>
           <Copyright>&copy; 2021 hyperflow, TEAM waffle</Copyright>
-          <Address>
+          <Description>
             원작 콘텐츠의 저작권은 저자 또는 제공처에 있으며, 비평 목적의
             공정이용 해당 범위 내에서 인용하고 있습니다.
-          </Address>
-          <Address>
-            서울특별시 성북구 안암동5가 고려대학교 과학도서관 309B호
-          </Address>
+          </Description>
           <Octocat
             target="_blank"
             href="https://github.com/hyp3rflow/waffle-frontend"

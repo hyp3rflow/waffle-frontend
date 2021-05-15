@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 import RoundButton from 'components/base/RoundButton';
-import PageTemplate from 'components/base/PageTemplate';
+import PageTemplate from 'components/base/BlockLayout';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const LoginWrapper = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 
-import PageTemplate from 'components/base/PageTemplate';
+import PageTemplate from 'components/base/BlockLayout';
 import { ColorPalette } from 'utils/ColorUtils';
 
 const RegisterWrapper = styled.div`
