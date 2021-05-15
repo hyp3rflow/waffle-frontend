@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styled, { css } from 'styled-components';
+import { VscThreeBars } from 'react-icons/vsc';
 
 import Logo from 'assets/waffle-logo@2x.png';
 import { ColorPalette } from 'utils/ColorUtils';
@@ -63,6 +64,25 @@ const Header: React.FC = () => {
               <LogoImg src={Logo} alt="logo" />
             </LogoLink>
           </Link>
+          <div
+            css={css`
+              width: 20px;
+              height: 20px;
+              margin-left: auto;
+              margin-right: 8px;
+
+              @media screen and (min-width: calc(${BREAKPOINT_MEDIUM} + 1px)) {
+                display: none;
+              }
+            `}
+          >
+            <VscThreeBars
+              css={css`
+                width: 20px;
+                height: 20px;
+              `}
+            />
+          </div>
           <div
             css={css`
               display: flex;
